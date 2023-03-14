@@ -1,0 +1,44 @@
+VUE
+
+CAPAS:
+
+-Render declarativo : dibujar elementos  a la pantalla del computador de una manera con sintaxis facil de entender
+-Sistema de componentes: piezas de la interfaz que se pueden combinar para formar el proyecto final
+-Enrutamiento del cliente: tener diferentes direcciones en la aplicación
+-Manejo del estado a gran escala: cambios de estado sin importar el sitio
+-Build system: empaquetar el proyecto y dejarlo listo para producción
+
+cod html
+
+<div id="app"> 
+  <h1>{{ message }}</h1>
+</div>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">                   //cdn que trae a vue (cdn es que no se instala nada, solo se trae)
+</script>
+
+<script>
+  new Vue ({                                                            //instancia vue le pasa un objeto
+    el: '#app',                                                         // almoadilla referencia el massage
+    data {                                                              
+      message:"Hola"
+    }
+  })
+</script>
+
+DIRECTIVAS DE VUE:
+
+atributos q indican a vue.js realizar ciertos cambios a un elemento del DOM.
+Las directivas siempre empiezan con "v-".                                       //
+<div v-if ="showAlert">
+  <p> Directiva </p>
+</div>
+
+tipos de directivas:
+v-for: Se usa para iterar un array o un objeto
+v-on: Escucha un evento nativo o creado por nosotros
+v-bind:
+v-if:
+v-else:
+v-show: 
