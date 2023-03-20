@@ -1,7 +1,4 @@
-.info{
-    background-color: #df2e2e;;
-    color: #fff;
-    font-family: sans-serif;
-    padding: .5rem;
-    border-radius: .3rem;
+th ,td{
+    border: .1rem solid #000;
+    text-align: center;
 }

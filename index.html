@@ -10,15 +10,43 @@
 </head>
 <body>
     <div id="app"> 
-        <input type="text" v-model="opcion">
-        <div v-if="opcion=='Apolo'" v-html="mensaje"></div>
-        <div v-else-if="opcion=='Artemis'" v-html="mensaje2"></div>
-        <div v-else-if="opcion=='Sputnik'" v-html="mensaje3"></div>
-        <div v-else v-html="mensaje4" class="error"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Dato</th>
+                </tr>
+            </thead>
+            <tbody v-for="(val, id) in lista":key="id">
+                <tr>
+                    <td v-text="id"></td>
+                    <td v-text="val"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
-<!-- La directiva v-if hace algo muy parecido a la directiva v-show pero tiene una diferencia principal: mientras que v-show mantiene el código en el HTML y lo oculta o muestra con CSS dependiendo del valor indicado, v-if evaluará la condición y si es falsa no la colocará en el HTML. Además, con v-if podemos usar v-else y/o v-else-if, por lo que es algo más potente.-->
+<!--v-for posibilidad de crear un bulce for desde las templates de código  HTML de vue.-->
+
+ 
+<!-- Ejemplo:  v-for="(configuración) in array":key="id" -->
+<!-- Configuración: (val,id)-->
+<!-- Definición iteramos por cada uno de los elementos del array -->
+
+
+<!-- Ejemplo:  v-for="(configuración) in objet":key="id" -->
+<!-- Configuración: (val, name, id)-->
+<!-- Definición iteramos por cadaa una de las propiedades del objeto.  -->
+
+<!-- Ejemplo:  v-for="(configuración) in number":key="id" -->
+<!-- Configuración: (i,id)-->
+<!-- Definición iteramos en un bucle de 1 al número number -->
+
+<!-- Ejemplo:  v-for="(configuración) in string":key="id" -->
+<!-- Configuración: (char,id)-->
+<!-- Definición iteramos por cada carácter del string -->
+
 
 
 
