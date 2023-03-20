@@ -10,42 +10,12 @@
 </head>
 <body>
     <div id="app"> 
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Dato</th>
-                </tr>
-            </thead>
-            <tbody v-for="(val, id) in lista":key="id">
-                <tr>
-                    <td v-text="id"></td>
-                    <td v-text="val"></td>
-                </tr>
-            </tbody>
-        </table>
+        <img v-bind:src="imagen" :alt="img">
     </div>
 </body>
 </html>
-<!--v-for posibilidad de crear un bulce for desde las templates de código  HTML de vue.-->
+<!--v-bind permite bindear (enlazar) una variable vue con un atributo específico de una etiqueta HTML. De esta forma, podemos colocar como valor de un atributo HTML el contenido que tengamos almacenado en una variable de la lógica de javascript-->
 
- 
-<!-- Ejemplo:  v-for="(configuración) in array":key="id" -->
-<!-- Configuración: (val,id)-->
-<!-- Definición iteramos por cada uno de los elementos del array -->
-
-
-<!-- Ejemplo:  v-for="(configuración) in objet":key="id" -->
-<!-- Configuración: (val, name, id)-->
-<!-- Definición iteramos por cadaa una de las propiedades del objeto.  -->
-
-<!-- Ejemplo:  v-for="(configuración) in number":key="id" -->
-<!-- Configuración: (i,id)-->
-<!-- Definición iteramos en un bucle de 1 al número number -->
-
-<!-- Ejemplo:  v-for="(configuración) in string":key="id" -->
-<!-- Configuración: (char,id)-->
-<!-- Definición iteramos por cada carácter del string -->
 
 
 

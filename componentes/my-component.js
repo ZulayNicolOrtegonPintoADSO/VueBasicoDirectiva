@@ -1,11 +1,9 @@
 export default{
     data(){
         return {
-           lista: [
-            "Apolo", 
-            "Artemis" ,
-            "Sputnik"
-           ]
+            imagen:"https://lenguajejs.com/vuejs/componentes/composition-api/options-api-composition-api.png" ,
+
+            texto: "Diferencias entre vue2 y vue3"
         }
     }
 }
