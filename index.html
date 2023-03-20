@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="app.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app"> 
-        <input type="tel" v-model="mensaje">
-        <h1> {{mensaje}}</h1>
-        <strong v-text="mensaje"></strong>
+        <label> Zona franja: <strong>Campus</strong></label>
+        <div>
+            <input type="radio" v-model="centinela" v-bind:value="true">  <!--  Ver -->
+            <input type="radio" v-model="centinela" v-bind:value="false"> <!--Ocultar --> 
+        </div>
+        <div v-show="centinela" class="info">los mejores proramadores </div>
     </div>
 </body>
 </html>
-<!--v-model permite crear un modelo de datos bidireccional entre un elemento HTML concreto y una variable vue (podemos sincronizar el contenido de una variable con el contenido que tenga un elemento HTML <input> en su atributo value) -->
+<!--Condiciones directamente en nuestro etiquetado HTML, sin tener que recurrir a lógica Javascript o realizar código más complejo. Esto nos permite crear múltiples posibilidades directamente en nuestra parte del template, haciendo el código mucho más sencillo. -->
+
+<!-- v-show muestra u oculta algo dependiendo de su valor, si es true muestra si es false lo oculta con css -->
+
