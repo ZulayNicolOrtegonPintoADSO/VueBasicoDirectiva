@@ -9,9 +9,10 @@
 </head>
 <body>
     <div id="app"> 
-        <h1 v-text="avanzado"></h1> 
-        <h1 v-text="intermedio"></h1> 
-        <h1 v-text="basico"></h1> 
+        <input type="tel" v-model="mensaje">
+        <h1> {{mensaje}}</h1>
+        <strong v-text="mensaje"></strong>
     </div>
 </body>
 </html>
+<!--v-model permite crear un modelo de datos bidireccional entre un elemento HTML concreto y una variable vue (podemos sincronizar el contenido de una variable con el contenido que tenga un elemento HTML <input> en su atributo value) -->
