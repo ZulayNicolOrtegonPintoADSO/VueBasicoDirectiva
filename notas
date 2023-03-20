@@ -2,11 +2,15 @@ VUE
 
 CAPAS:
 
--Render declarativo : dibujar elementos  a la pantalla del computador de una manera con sintaxis facil de entender
--Sistema de componentes: piezas de la interfaz que se pueden combinar para formar el proyecto final
--Enrutamiento del cliente: tener diferentes direcciones en la aplicación
--Manejo del estado a gran escala: cambios de estado sin importar el sitio
--Build system: empaquetar el proyecto y dejarlo listo para producción
+-Render declarativo : dibujar elementos  a la pantalla del computador de una manera con sintaxis facil de entender.
+
+-Sistema de componentes: piezas de la interfaz que se pueden combinar para formar el proyecto final.
+
+-Enrutamiento del cliente: tener diferentes direcciones en la aplicación.
+
+-Manejo del estado a gran escala: cambios de estado sin importar el sitio.
+
+-Build system: empaquetar el proyecto y dejarlo listo para producción.
 
 cod html
 
@@ -30,15 +34,18 @@ cod html
 DIRECTIVAS DE VUE:
 
 atributos q indican a vue.js realizar ciertos cambios a un elemento del DOM.
-Las directivas siempre empiezan con "v-".                                       //
+Las directivas siempre empiezan con"v-".                                       //
+
 <div v-if ="showAlert">
   <p> Directiva </p>
 </div>
 
 tipos de directivas:
+
 v-for: Se usa para iterar un array o un objeto
 v-on: Escucha un evento nativo o creado por nosotros
-v-bind:
-v-if:
-v-else:
-v-show: 
+v-bind: vincula un atributo html a un valor que tenemos en nuestro modelo.
+v-if: inyecta un elemento al DOM según  la condición
+v-else: trabaja en función a si la condición declarada en una directiva v-if se cumple o no
+v-show: muestra u oculta un elemento usando la propiedad display de css
+
