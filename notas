@@ -49,3 +49,17 @@ v-if: inyecta un elemento al DOM según  la condición
 v-else: trabaja en función a si la condición declarada en una directiva v-if se cumple o no
 v-show: muestra u oculta un elemento usando la propiedad display de css
 
+-DIRECTIVAS BÁSICAS: {v-text, v-html, v-model} //Permita realizar tareas simples
+
+-DIRECTIVAS CONDICIONALES: {v-show , v-if , v-else , v-else-if} /Permiten -realizar acciones según condicionales.
+
+-DIRECTIVAS DE BUClES: {v-for} // Permiten realizar operaciones varias veces.
+
+-DIRECTIVAS AVANZADAS: {v-bind , v-on , v-slot} //Permiten realizar tareas más específicas.
+
+Las directivas están formadas por varias partes:
+-Directivas
+-Argumento
+-Modificaador
+-Valor
+
