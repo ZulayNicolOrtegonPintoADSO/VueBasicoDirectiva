@@ -10,16 +10,17 @@
 </head>
 <body>
     <div id="app"> 
-        <label> Zona franja: <strong>Campus</strong></label>
-        <div>
-            <input type="radio" v-model="centinela" v-bind:value="true">  <!--  Ver -->
-            <input type="radio" v-model="centinela" v-bind:value="false"> <!--Ocultar --> 
-        </div>
-        <div v-show="centinela" class="info">los mejores proramadores </div>
+        <input type="text" v-model="opcion">
+        <div v-if="opcion=='Apolo'" v-html="mensaje"></div>
+        <div v-else-if="opcion=='Artemis'" v-html="mensaje2"></div>
+        <div v-else-if="opcion=='Sputnik'" v-html="mensaje3"></div>
+        <div v-else v-html="mensaje4" class="error"></div>
     </div>
 </body>
 </html>
-<!--Condiciones directamente en nuestro etiquetado HTML, sin tener que recurrir a lógica Javascript o realizar código más complejo. Esto nos permite crear múltiples posibilidades directamente en nuestra parte del template, haciendo el código mucho más sencillo. -->
+<!-- La directiva v-if hace algo muy parecido a la directiva v-show pero tiene una diferencia principal: mientras que v-show mantiene el código en el HTML y lo oculta o muestra con CSS dependiendo del valor indicado, v-if evaluará la condición y si es falsa no la colocará en el HTML. Además, con v-if podemos usar v-else y/o v-else-if, por lo que es algo más potente.-->
 
-<!-- v-show muestra u oculta algo dependiendo de su valor, si es true muestra si es false lo oculta con css -->
+
+
+
 
